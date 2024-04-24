@@ -9,10 +9,9 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table'
-import image1 from '../Home/images/1.jpeg';
-import { Footer } from 'flowbite-react';
-import Form from 'react-bootstrap/Form';
+
 import Accordion from 'react-bootstrap/Accordion';
+import logo from '../../CarasoulImages/logo.png';
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -153,29 +152,6 @@ const Home = () => {
             </div>
             <br/>
             <br/>
-            <div className='form' style={{ width: '50%',marginLeft:'25%'}}>
-                <h1><b>Donation Center</b></h1>
-                <Form.Floating className="mb-3">
-                    <Form.Control
-                        id="floatingInputCustom"
-                        type="text"
-                        placeholder="Latitute"
-                    />
-                    <label htmlFor="floatingInputCustom">Latitude</label>
-                </Form.Floating>
-                <Form.Floating>
-                    <Form.Control
-                        id="floatingPasswordCustom"
-                        type="text"
-                        placeholder='Longitute'
-                    />
-                    <label htmlFor="floatingPasswordCustom">Longitude</label>
-                </Form.Floating>
-            </div>
-            <br/>
-            <footer style={{backgroundColor: 'grey', height: '30vh'}}>
-
-            </footer>
         </div>
     );
 }

@@ -7,19 +7,22 @@ import Home from './Dashboard/Home/Home.jsx';
 import {
   BrowserRouter as Router, Routes, Route
 } from 'react-router-dom'
-import Graph from './Dashboard/Graphs/graph.jsx';
+import Stats from './Dashboard/Statestics/graph.jsx';
 import Physical from './Dashboard/Contriute/Physical/physical.jsx';
 import Financial from './Dashboard/Contriute/financial/financial.jsx';
+import Support from './Dashboard/Support/support.jsx';
+import Footer from './Dashboard/Footer/Footer.jsx';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-            <Route path='/' element={<><NavBar/><Home /></>} />
-            <Route path='/graph' element={<><NavBar/><Graph /></>} />
-            <Route path='/physical' element={<><NavBar/><Physical /></>} />
-            <Route path='/financial' element={<><NavBar/><Financial /></>} />
+            <Route path='/' element={<><NavBar/><Home/><Footer/></>} />
+            <Route path='/stats' element={<><NavBar/><Stats /><Footer/></>} />
+            <Route path='/physical' element={<><NavBar/><Physical /><Footer/></>} />
+            <Route path='/financial' element={<><NavBar/><Financial /><Footer/></>} />
+            <Route path='/support' element={<><NavBar/><Support/><Footer/></>} />
         </Routes>
       </Router>
     </div>
