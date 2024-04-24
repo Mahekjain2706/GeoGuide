@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+/Ml Model/natural_disaster_human_mobility.csv
 # testing
 /coverage
 
