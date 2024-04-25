@@ -8,10 +8,9 @@ import fourth from '../../CarasoulImages/3.jpg';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Table from 'react-bootstrap/Table'
-
+import Table from 'react-bootstrap/Table';
+import DataMap from './DataMap';
 import Accordion from 'react-bootstrap/Accordion';
-import logo from '../../CarasoulImages/logo.png';
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -151,6 +150,7 @@ const Home = () => {
                 </Accordion>
             </div>
             <br/>
+            <DataMap/>
             <br/>
         </div>
     );

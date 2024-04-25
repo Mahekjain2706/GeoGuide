@@ -12,6 +12,7 @@ import Physical from './Dashboard/Contriute/Physical/physical.jsx';
 import Financial from './Dashboard/Contriute/financial/financial.jsx';
 import Support from './Dashboard/Support/support.jsx';
 import Footer from './Dashboard/Footer/Footer.jsx';
+import DataMap from './Dashboard/Home/DataMap.jsx';
 
 function App() {
   return (

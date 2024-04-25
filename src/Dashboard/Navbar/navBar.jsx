@@ -51,13 +51,7 @@ const NavBar = () => {
             </Nav.Link> */}
             </Nav>
             <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="primary">Search</Button>
+              <Button variant="danger" style = {{width: '200px'}}>Donate</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
